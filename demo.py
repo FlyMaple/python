@@ -73,3 +73,53 @@ elif score == 100:
 else:
     print("啥")
 
+# function
+list_1 = [1, 2, 3, 4, 5]
+def func1(_list):
+    for i in _list:
+        print(i)
+    return
+
+# TODO: sort function
+list_1 = [23, 50, 1, 25, 56, 98, 12, 23, 64, 14, 78, 60]
+
+# file
+file = open('note.txt', 'w+')
+file.write('hi')
+file.close()
+
+# try except
+try:
+    r = request.get('12345')
+except Exception:
+    print('Exception!')
+
+# assert 條件必須為這樣
+year = 2018
+assert year >= 2018, "Assert abort!"
+print('After assert')
+
+# class
+class MyClz:
+    def __init__(self, name):
+        self.name = name
+
+print(type(MyClz))
+print(MyClz)
+
+
+class Person:
+    def __init__(self, name, weight, height):
+        self.name = name
+        self.weight = weight
+        self.height = height
+
+    def jump(self):
+        print(self)
+        print('跳')
+
+
+class Driver:
+    def drive(self):
+        print(self)
+        print('開車')
