@@ -24,3 +24,25 @@ print(type(obj.values()))  # <class 'dict_values'>
 print("=============")
 print(dict([["name", "Skye"], ["age", 18]]))  # {'name': 'Skye', 'age': 18}
 print(dict([["name", "Skye"], ("age", 18)]))  # {'name': 'Skye', 'age': 18}
+
+
+print("=============")
+o = {"name": "skye", "age": 18, "skill": [], "height": 174.5}
+print(o)
+for c in o:
+    print("key: ", c, ", value: ", o[c], sep="")
+
+print("=============")
+o = {"name": "skye", "age": 18, "skill": [], "height": 174.5}
+print(o)
+for k,v in o.items():
+    print("key:", k, end=", ")
+    print("value:", v)
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                                   #
+#                            常用函數                                #
+#                                                                   #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #    
+# clear、copy、fromkeys、get、in、items、keys、values、pop、popitem
