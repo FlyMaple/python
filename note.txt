@@ -1,1 +1,11 @@
-hi
+$scope.siteDeleteButtonDisabled = function () {
+    if (!$scope.tableSites.waitFullLoad) {
+        if ($scope.tableSites.selectedList && $scope.tableSites.selectedList.length === 1) {
+            if ($scope.tableSites.selectedList[0].device_count === 0) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+};
