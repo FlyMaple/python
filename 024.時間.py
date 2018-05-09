@@ -88,8 +88,8 @@ print(time.perf_counter())
 # 0.140625
 print(time.process_time())
 
-#
-time.sleep
+# 類似 delay 效果
+time.sleep(5)
 
 # 格式化時間
 # 元組時間 轉 格式化字串
